@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+                   version="3.1">
+
+
+    <servlet>
+        <servlet-name>taskaddusercontainer</servlet-name>
+        <servlet-class>root.TaskAddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>taskaddusercontainer</servlet-name>
+        <url-pattern>/worker</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>formdelegatecontainer</servlet-name>
+        <servlet-class>root.FormDelegateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>formdelegatecontainer</servlet-name>
+        <url-pattern>/userformdelegate</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>welcomecontainer</servlet-name>
+        <servlet-class>root.AddWelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcomecontainer</servlet-name>
+        <url-pattern>/addWelcome</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>logincontainer</servlet-name>
+        <servlet-class>root.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logincontainer</servlet-name>
+        <url-pattern>/loginform</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>formcontainer</servlet-name>
+        <servlet-class>root.FormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>formcontainer</servlet-name>
+        <url-pattern>/userform</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewGAE</servlet-name>
+        <servlet-class>root.NewGAEServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewGAE</servlet-name>
+        <url-pattern>/newgae</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
