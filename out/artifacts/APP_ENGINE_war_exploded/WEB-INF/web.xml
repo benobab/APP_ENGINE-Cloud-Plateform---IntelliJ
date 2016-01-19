@@ -59,6 +59,22 @@
         <servlet-name>NewGAE</servlet-name>
         <servlet-class>root.NewGAEServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>root.deuxServlets.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/getInfo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>root.deuxServlets.Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>NewGAE</servlet-name>
         <url-pattern>/newgae</url-pattern>
